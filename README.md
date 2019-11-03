@@ -10,7 +10,7 @@ a simple approach to badge management in any project (nodejs required)
 
 
 [comment_badge_management_start]: <hidden__do_not_remove-special>
-##### Badges
+### Badges
 
 ![version badge](badges/version.png)
 
