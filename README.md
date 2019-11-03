@@ -1,4 +1,4 @@
-# badge-management
+# Badge Management
 
 
 [comment_badge_management_start]: <hidden__do_not_remove>
