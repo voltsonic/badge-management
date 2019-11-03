@@ -1,7 +1,7 @@
 "use strict";
 
 const _ = require("lodash");
-const url = require("url");
+const urlParser = require("url");
 const JsonKeyTypeBadge = require("../JsonKeyTypeBadge");
 
 class RepositoryUrlNodejsTypeBadge extends JsonKeyTypeBadge {
@@ -9,7 +9,7 @@ class RepositoryUrlNodejsTypeBadge extends JsonKeyTypeBadge {
         return type === "package_repository_url";
     }
     buildConfig(badgenConfig, nextConfig, rootFolder){
-        let repoUri = 'unknown://__missing__';
+        let url = 'unknown://__missing__';
         let label = nextConfig.hasOwnProperty("label")
             ?nextConfig.label
             :"repo";
@@ -21,15 +21,14 @@ class RepositoryUrlNodejsTypeBadge extends JsonKeyTypeBadge {
                 after: (v) => {
                     if(v.split('://')[0].indexOf("+") > -1)
                         v = v.replace(/^[^+]+\+/i, '');
-                    repoUri = v;
-                    console.log("repoUri", repoUri);
-                    return url.parse(repoUri).hostname;
+                    url = v;
+                    return urlParser.parse(url).hostname;
                 }
             },
             rootFolder
         ), {
             label,
-            repoUri
+            url
         });
     }
 }
