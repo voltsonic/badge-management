@@ -32,9 +32,22 @@
     "sharp": "^0.23.2"
   },
   "badges": {
-    "injectors": [
-      "README.md"
-    ],
+    "injectors": {
+      "README.md": [
+        {
+          "definitions": [
+            "repository"
+          ]
+        },
+        {
+          "label": "Badges",
+          "tag": "special",
+          "definitions": [
+            "version"
+          ]
+        }
+      ]
+    },
     "global": {
       "store": "badges/",
       "badgen": {
