@@ -48,15 +48,6 @@
         }
       ]
     },
-    "global": {
-      "store": "badges/",
-      "badgen": {
-        "labelColor": "555",
-        "color": "blue",
-        "style": "flat",
-        "scale": "1"
-      }
-    },
     "definitions": {
       "version": {
         "type": "package_version"
