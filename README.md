@@ -4,6 +4,7 @@
 ##### Badges
 
 ![version badge](badges/version.png) [![repository badge](badges/repository.png)](https://github.com/voltsonic/badge-management.git)
+
 [comment_badge_management_end]: <hidden__do_not_remove>
 
 a simple approach to badge management in any project (nodejs required)
@@ -12,6 +13,7 @@ a simple approach to badge management in any project (nodejs required)
 ##### Badges
 
 ![version badge](badges/version.png) [![repository badge](badges/repository.png)](https://github.com/voltsonic/badge-management.git)
+
 [comment_badge_management_end]: <hidden__do_not_remove>
 
 - Styles: flat, classic (gradient)
