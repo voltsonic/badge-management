@@ -53,8 +53,8 @@ class BadgeManagement {
 
         this.globalConfig = _.merge({
             store: "badges/",
-            colors: {
-                label: "555",
+            badgen: {
+                labelColor: "555",
                 color: "blue",
                 style: "flat",
                 scale: "1"
