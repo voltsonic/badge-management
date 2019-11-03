@@ -1,0 +1,62 @@
+{
+  "name": "badge-management",
+  "version": "0.5.0",
+  "description": "a simple approach to badge management in any project",
+  "main": "badge-management.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "badges_update": "node scripts/badges.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voltsonic/badge-management.git"
+  },
+  "keywords": [
+    "readme badges",
+    "badges",
+    "shields",
+    "local badges",
+    "local shields"
+  ],
+  "author": "voltsonic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/voltsonic/badge-management/issues"
+  },
+  "homepage": "https://github.com/voltsonic/badge-management#readme",
+  "dependencies": {
+    "badgen": "^3.0.1",
+    "find-up": "^4.1.0",
+    "lodash": "^4.17.15",
+    "sharp": "^0.23.2"
+  },
+  "badges": {
+    "injectors": [
+      "README.md"
+    ],
+    "global": {
+      "store": "badges/",
+      "badgen": {
+        "labelColor": "555",
+        "color": "blue",
+        "style": "flat",
+        "scale": "1"
+      }
+    },
+    "definitions": {
+      "version": {
+        "type": "package_version"
+      },
+      "repository": {
+        "type": "package_repository_url"
+      },
+      "custom": {
+        "label": "lbl",
+        "text": "txt"
+      }
+    }
+  },
+  "devDependencies": {
+    "version-management": "^1.0.5"
+  }
+}
