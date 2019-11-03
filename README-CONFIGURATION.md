@@ -1,5 +1,7 @@
 ### Configuration Formatting
 
+---
+
 ##### Global Options
 
 - `after` a callable function. `(valuePulled: string) => string`
@@ -7,6 +9,10 @@
         - `valuePulled` `string` this will be the value that was pulled or given.
     - @return string
         - Return the manipulated value to be replace the `valuePulled` on badge creation.
+
+---
+
+### Generics Types
 
 ##### Type: Raw
 
@@ -57,7 +63,9 @@
 }
 ```
 
-### Configuration Formatting (Custom Modules)
+---
+
+### Custom Types
 
 ##### Type: NodeJS // package.json Version
 
