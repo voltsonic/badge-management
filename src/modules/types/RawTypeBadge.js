@@ -5,11 +5,13 @@ class RawTypeBadge {
         return type === "raw";
     }
     buildConfig(badgenConfig, nextConfig, rootFolder){
+        let afterCallback = (nextConfig.hasOwnProperty("after") && typeof nextConfig.after === "function")
+            ?nextConfig.after
+            :(v => v);
+
         return {
-            label: nextConfig.hasOwnProperty("label")
-                ?nextConfig.label
-                :"label",
-            status: nextConfig.text
+            label: nextConfig.label,
+            status: afterCallback(nextConfig.text)
         };
     }
 }

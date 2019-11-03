@@ -21,14 +21,11 @@ class JsonKeyTypeBadge extends RawTypeBadge {
     buildConfig(badgenConfig, nextConfig, rootFolder){
         let jsonFile = path.join(rootFolder, nextConfig.file);
         let json = JSON.parse(fs.readFileSync(jsonFile, "utf8"));
-        let afterCallback = (nextConfig.hasOwnProperty("after") && typeof nextConfig.after === "function")
-            ?nextConfig.after
-            :(v => v);
 
         return super.buildConfig(badgenConfig, _.merge(
             nextConfig,
             {
-                text: afterCallback(JsonKeyTypeBadge.GetKey(json, nextConfig.key))
+                text: JsonKeyTypeBadge.GetKey(json, nextConfig.key)
             }
         ));
     }
