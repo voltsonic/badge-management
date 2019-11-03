@@ -14,6 +14,8 @@
 
 ### Generics Types
 
+---
+
 ##### Type: Raw
 
 - The default definition. Very basic text based rules.
@@ -29,6 +31,8 @@
   "text": "Value"
 }
 ```
+
+---
 
 ##### Type: Json Key
 
@@ -67,6 +71,8 @@
 
 ### Custom Types
 
+---
+
 ##### Type: NodeJS // package.json Version
 
 - Basic module that creates a badge based on the `package.json` version.
@@ -82,6 +88,8 @@
   "type": "package_version"
 }
 ```
+
+---
 
 ##### Type: NodeJS // package.json repository url.
 
