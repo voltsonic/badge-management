@@ -17,7 +17,6 @@ let BadgeTypes = [
 const defaultHeaderPound = 3;
 
 class BadgeManagement {
-    headerPounds;
     constructor(headerPounds = defaultHeaderPound){
         this.headerPounds = headerPounds;
     }
