@@ -1,6 +1,6 @@
 {
   "name": "badge-management",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a simple approach to badge management in any project",
   "main": "badge-management.js",
   "scripts": {
