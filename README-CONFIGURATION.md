@@ -81,7 +81,7 @@
 - *Optional*
     - `label` replace the default label `app`.
 - **Required**
-    - `type` = `package_version` *(do not change)*
+    - `type` = `node_package_version` *(do not change)*
 
 ```json
 {

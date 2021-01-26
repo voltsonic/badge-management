@@ -1,5 +1,6 @@
 # Badge Management
 
+# TODO: all of me.
 
 [comment_badge_management_start]: <hidden__do_not_remove>
 [![repository badge](badges/repository.png)](https://github.com/voltsonic/badge-management.git)

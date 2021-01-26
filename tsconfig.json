@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* Added */
+    "forceConsistentCasingInFileNames": true, /* Disallow inconsistently-cased references to the same file. */
+    "preserveConstEnums": true,               /* Do not erase const enum declarations in generated code. */
+    "resolveJsonModule": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports":  true,
+    "skipLibCheck": true,
+    "target": "es2015",
+    "module": "commonjs",
+    "lib": ["es2015", "dom"],
+    "allowJs": true,
+    "checkJs": true,
+    "rootDirs": ["src"],
+    "strict": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "__types__"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "__types__",
+    "__tests__"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "injectors": {
+    "README.md": [
+      {
+        "definitions": [
+          "repository"
+        ]
+      },
+      {
+        "label": "Badges",
+        "tag": "special",
+        "definitions": [
+          "version"
+        ]
+      }
+    ]
+  },
+  "definitions": {
+    "version": {
+      "type": "package_version"
+    },
+    "repository": {
+      "type": "package_repository_url"
+    },
+    "custom": {
+      "label": "lbl",
+      "text": "txt"
+    }
+  }
+}
