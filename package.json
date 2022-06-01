@@ -29,7 +29,7 @@
     "detect-newline": "^3.0.0",
     "find-up": "^4.1.0",
     "lodash": "^4.17.15",
-    "sharp": "^0.23.2"
+    "sharp": "^0.30.5"
   },
   "badges": {
     "injectors": {
